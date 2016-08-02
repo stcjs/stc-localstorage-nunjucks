@@ -50,7 +50,7 @@ export default class stcAdapter {
 
     let content = [
       `${ld} set stcLsCookieFn = eval(\'think.stcLsCookie = function(http){`,
-      `var stc_ls_cookie = http.cookie("${lsCookie}",`,
+      `var stc_ls_cookie = http.cookie("${lsCookie}");`,
       `var stc_cookie_length = stc_ls_cookie.length;`,
       `var stc_ls_cookies = {};`,
       `for(var i = 0; i < stc_cookie_length;i += 2) {`,
